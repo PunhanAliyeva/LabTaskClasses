@@ -9,16 +9,21 @@
            Human human3=new Human("Selma","Mammedli",17,"Siyazan");
            Human human4=new Human("Ali","Aliyev",18,"Baku");
 
-           
+
 
             //Console.WriteLine(human1.IsStudent());
             //Console.WriteLine(human2.IsStudent());
             //Console.WriteLine(human3.IsStudent());
             //Console.WriteLine(human4.IsStudent());
-           
+
 
             Human human = new();
-            human.CheckCity(human1.City,human2.City,human3.City,human4.City);
+            //human.CheckCity(human1.City,human2.City,human3.City,human4.City);
+
+            Human[] humans = {human1,human2,human3,human4};
+            human.GetCount(humans);
+
+
 
         }
     }

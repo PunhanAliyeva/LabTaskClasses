@@ -47,6 +47,22 @@ namespace LabTaskClasses
                 Console.WriteLine("Eyni seherde deyil..");
             }
         }
-
+        public void GetCount(Human[]humans)
+        {
+            int stuCount = 0;
+            for (int i = 0; i < humans.Length; i++)
+            {
+                for (int j = 0; j < humans.Length; j++)
+                {
+                    if (humans[i].City.Equals(humans[j].City,StringComparison.OrdinalIgnoreCase))
+                    {
+                        stuCount++;
+                    }
+                }
+                Console.WriteLine($"Seher:{humans[i].City} Sagird sayi:{stuCount}");
+                stuCount = 0;
+            }
+           
+        }
     }
 }
